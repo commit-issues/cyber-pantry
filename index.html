@@ -1,0 +1,726 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="Cyber Pantry: a resource library of free, vetted cybersecurity resources by SudoChef, laid out step by step from beginner to advanced."><meta property="og:title" content="The Cyber Pantry"><meta property="og:description" content="A resource library of free, vetted cybersecurity resources by SudoChef."><meta property="og:url" content="https://cyberpantry.org/"><link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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"><link rel="apple-touch-icon" href="data:image/png;base64,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"><meta property="og:type" content="website"><meta property="og:image" content="https://cyberpantry.org/og-image.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://cyberpantry.org/og-image.jpg"><style>body{margin:0;padding:0}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+
+<title>The Cyber Pantry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: sticky utility header + learning-path ribbon, then a searchable stack of
+   learning-ordered sections, each a wrapping grid of resource cards. Dark-first femme/terminal identity. */
+:root{
+  --bg:#fbf7f9; --surface:#ffffff; --surface-2:#f6eef3;
+  --fg:#1b1420; --muted:#6c5f69; --line:#ece1e8;
+  --accent:#d1246b; --accent-soft:#fbe6ef; --accent2:#0d8784; --tip:#9a5b05; --tip-soft:#fbefdc;
+  --display:"Syne", "Trebuchet MS", sans-serif;
+  --body:"Hanken Grotesk", system-ui, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#140e17; --surface:#1d1622; --surface-2:#251c2c;
+  --fg:#f3e8ef; --muted:#a493a0; --line:#2f2436;
+  --accent:#ff5c9e; --accent-soft:#2a1522; --accent2:#33d6c6; --tip:#e3ac52; --tip-soft:#2a2113;
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#140e17; --surface:#1d1622; --surface-2:#251c2c;
+  --fg:#f3e8ef; --muted:#a493a0; --line:#2f2436;
+  --accent:#ff5c9e; --accent-soft:#2a1522; --accent2:#33d6c6; --tip:#e3ac52; --tip-soft:#2a2113;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top-in{display:flex;align-items:center;gap:14px;padding-block:12px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:800;font-size:17px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px;white-space:nowrap}
+.brand b{color:var(--accent)}
+.brand span{line-height:1.05}
+.brand small{display:block;font-family:var(--mono);font-weight:500;font-size:9.5px;letter-spacing:.03em;color:var(--muted)}
+.heart{width:16px;height:16px;flex:none}
+.search{flex:1 1 220px;min-width:0;position:relative}
+.search input{width:100%;font-family:var(--mono);font-size:13px;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:9px 14px 9px 34px}
+.search input::placeholder{color:var(--muted)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+.search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:15px;height:15px;color:var(--muted)}
+.count{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap}
+.count b{color:var(--accent)}
+.toggle{font-family:var(--mono);font-size:12px;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 12px;cursor:pointer}
+.toggle:hover{border-color:var(--accent)}
+
+/* hero */
+.hero{padding-block:34px 10px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.hero h1{font-size:clamp(30px,6vw,52px);font-weight:800;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lead{color:var(--muted);max-width:none;margin-top:14px;font-size:16px}
+.donate{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;background:var(--tip-soft);border:1px solid color-mix(in srgb,var(--tip) 40%,transparent);border-radius:12px;padding:12px 16px}
+.donate p{margin:0;font-size:14px;color:var(--fg);flex:1 1 320px}
+.donate b{color:var(--tip)}
+.donate .dbtn{flex:none;font-family:var(--display);font-weight:700;font-size:14px;color:#1b1420;background:var(--tip);border-radius:10px;padding:9px 16px;text-decoration:none;white-space:nowrap;transition:transform .15s}
+.donate .dbtn:hover{transform:translateY(-2px)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+a.chip.star{text-decoration:none;color:var(--fg);border-color:var(--accent);transition:transform .15s}
+a.chip.star:hover{transform:translateY(-1px);background:var(--accent-soft)}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.03em;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 11px}
+
+/* path ribbon */
+.path{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:26px}
+.step{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;transition:border-color .15s,transform .15s}
+.step:hover{border-color:var(--accent);transform:translateY(-2px)}
+.step .n{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:700}
+.step .t{font-family:var(--display);font-weight:700;font-size:15px;margin-top:4px}
+.step .d{color:var(--muted);font-size:12.5px;margin-top:3px}
+
+/* sections */
+section{padding-block:30px;border-top:1px solid var(--line);scroll-margin-top:90px}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head .lbl{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent2)}
+.sec-head h2{font-size:clamp(21px,3.6vw,28px);font-weight:700;letter-spacing:-.02em}
+.sec-head .num{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.sec-intro{color:var(--muted);max-width:68ch;margin:6px 0 2px;font-size:14.5px}
+.tip{display:flex;gap:10px;background:var(--tip-soft);border:1px solid color-mix(in srgb,var(--tip) 35%,transparent);border-radius:12px;padding:12px 14px;margin:16px 0;font-size:13.5px;color:var(--fg)}
+.tip b{color:var(--tip)}
+.tip a{color:var(--tip);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.tip svg{flex:none;width:17px;height:17px;color:var(--tip);margin-top:1px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:12px;margin-top:16px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:14px;min-width:0;text-decoration:none;transition:border-color .15s,transform .15s,box-shadow .15s}
+.card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 6px 22px -14px var(--accent)}
+.card .nm{font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:-.01em;display:flex;align-items:center;gap:6px;min-width:0}
+.card .nm span{overflow-wrap:anywhere}
+.card .nm .ar{flex:none;width:13px;height:13px;color:var(--muted);transition:color .15s,transform .15s}
+.card:hover .nm .ar{color:var(--accent);transform:translate(2px,-2px)}
+.card .bl{color:var(--muted);font-size:13px;margin-top:5px;min-width:0}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:9px}
+.card .tg{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent2);border:1px solid var(--line);border-radius:999px;padding:3px 8px}
+.card.adv .tg{color:var(--accent)}
+.card.rich{position:relative}
+.card.rich .main{color:inherit;text-decoration:none;overflow-wrap:anywhere}
+.card.rich .main::after{content:"";position:absolute;inset:0;border-radius:13px}
+.card .bl a{position:relative;z-index:1;color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.card.hl{border-color:var(--accent)}
+.card.hl .nm{color:var(--accent)}
+.card .tg.partner{color:#fff;background:var(--accent);border-color:var(--accent);font-weight:700}
+.card .bl a.cbtn{display:block;width:max-content;margin-top:10px;text-decoration:none;font-family:var(--display);font-weight:700;font-size:13px;color:var(--fg);background:var(--line);border:1px solid var(--muted);border-radius:10px;padding:8px 14px;transition:transform .15s}
+.card .bl a.cbtn:hover{transform:translateY(-2px)}
+.card .tg.paid{color:#fff;background:var(--tip);border-color:var(--tip);font-weight:700}
+/* community CTA */
+.community .join{display:inline-block;margin-top:16px;font-family:var(--display);font-weight:700;font-size:15px;color:#fff;background:var(--accent);border-radius:12px;padding:13px 22px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.featured{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(135deg,var(--accent-soft),var(--surface));border:1.5px solid var(--accent);border-radius:16px;padding:20px 22px}
+.featured .flbl{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--accent)}
+.featured h2{font-family:var(--display);font-size:clamp(20px,3vw,26px);margin:4px 0 6px}
+.featured p{color:var(--fg);font-size:14px;margin:4px 0;max-width:72ch}
+.featured p a{color:var(--accent);font-weight:700}
+.featured .btns{display:flex;flex-wrap:wrap;gap:10px}
+.featured .btn{font-family:var(--display);font-weight:700;font-size:14px;color:#fff;background:var(--accent);border:1.5px solid var(--accent);border-radius:12px;padding:11px 18px;text-decoration:none;white-space:nowrap;transition:transform .15s}
+.featured .btn:hover{transform:translateY(-2px)}
+.featured .btn.alt{background:transparent;color:var(--accent)}
+.community .join{margin-right:10px}
+.community .join.alt{color:var(--fg);background:var(--line);border:1px solid var(--muted)}
+.community .join.alt:hover{box-shadow:none}
+.community .join:hover{transform:translateY(-2px);box-shadow:0 10px 26px -12px var(--accent)}
+@media (max-width:560px){
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.card{padding:10px;border-radius:11px}
+.card.rich .main::after{border-radius:11px}
+.card .nm{font-size:13px;gap:4px}
+.card .nm .ar{width:11px;height:11px}
+.card .bl{font-size:11.5px;line-height:1.4}
+.card .tags{gap:4px;padding-top:7px}
+.card .tg{font-size:8.5px;padding:2px 6px;letter-spacing:.03em}
+}
+.nohit{display:none;color:var(--muted);font-family:var(--mono);font-size:13px;padding:30px 0}
+
+footer{border-top:1px solid var(--line);padding-block:30px 44px;color:var(--muted);font-size:13px}
+footer b{color:var(--fg)}
+footer a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+footer code{font-family:var(--mono);font-size:12px;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:2px 6px;color:var(--fg)}
+.host{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
+.host div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:13px}
+.host strong{font-family:var(--display)}
+@media(max-width:480px){.top-in{gap:10px}.count{order:3}}
+</style>
+
+<header class="top">
+  <div class="wrap top-in">
+    <div class="brand">
+      <svg class="heart" viewBox="0 0 24 24" fill="currentColor" style="color:var(--accent)"><path d="M12 21s-7.5-4.6-10-9.3C.2 8 1.9 4.4 5.3 4.4c2 0 3.4 1.1 4.2 2.3C10.3 5.5 11.7 4.4 13.7 4.4c3.4 0 5.1 3.6 3.3 7.3C19.5 16.4 12 21 12 21z"/></svg>
+      <span>The Cyber<b> Pantry</b><small>Resource Library &middot; by SudoChef</small></span>
+    </div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="search 325+ resources…" autocomplete="off" aria-label="Search resources">
+    </label>
+    <div class="count"><b id="shown">0</b> shown</div>
+    <button class="toggle" id="theme" type="button">theme</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div class="kicker">A Resource Library · by SudoChef</div>
+    <h1>Break into tech, <em>for zero dollars.</em></h1>
+    <p class="lead">Every resource here is <b>free</b> (<i>unless stated otherwise</i>), still working, and vetted — no paywalls, no expired coupons, no self-promo. Collected and curated from top cyber security communities and laid out step by step. Beginners: Start at the top and work your way down, then branch into a specialty when you’re ready. Cyber Veterans — take a look around.</p>
+    <div class="meta">
+      <a class="chip star" id="stars" href="https://github.com/commit-issues/cyber-pantry" target="_blank" rel="noopener noreferrer">⭐ Star on GitHub</a>
+      <span class="chip" id="ct-hero">325+ resources mostly free</span>
+      <span class="chip">beginner → advanced</span>
+      <span class="chip">last reviewed Nov 2026</span>
+    </div>
+    <div class="donate">
+      <p>☕ I spend countless hours helping people break into tech, secure their builds, find missing persons with OSINT, and stay safe online — and building learning guides worth thousands, all for <b>FREE</b>. Help me keep building to make tech accessible to everyone, equally!</p>
+      <a class="dbtn" href="https://buymeacoffee.com/n8nymphh" target="_blank" rel="noopener noreferrer">Buy me a coffee →</a>
+    </div>
+    <nav class="path" aria-label="Learning path">
+      <a class="step" href="#foundations"><div class="n">STEP 01</div><div class="t">Foundations</div><div class="d">Code, Linux & networking basics</div></a>
+      <a class="step" href="#roadmaps"><div class="n">STEP 02</div><div class="t">Roadmaps</div><div class="d">Pick a direction & study plan</div></a>
+      <a class="step" href="#labs"><div class="n">STEP 03</div><div class="t">Hands-On Labs</div><div class="d">Practice on real targets</div></a>
+      <a class="step" href="#web"><div class="n">STEP 04</div><div class="t">Pick a Track</div><div class="d">Web · Red · Blue · OSINT · RE</div></a>
+      <a class="step" href="#certs"><div class="n">STEP 05</div><div class="t">Get Certified</div><div class="d">Free exam prep & scholarships</div></a>
+      <a class="step" href="#community"><div class="n">STEP 06</div><div class="t">Join FemmeTech</div><div class="d">Community, mentorship & events</div></a>
+    </nav>
+    <aside class="featured" aria-label="Featured partner">
+      <div>
+        <div class="flbl">★ FEATURED PARTNER</div>
+        <h2>Hack The Box</h2>
+        <p>Try the Academy and new sign ups earn 200 Cubes!</p>
+        <p>Join our 50 Days of Hacking! Run by SudoChef and Sponsored by HTB to win free vouchers and the grand prize is a laptop give away! Join us in <a href="https://discord.gg/xkkq6FsyF" target="_blank" rel="noopener noreferrer">OwlSec</a></p>
+      </div>
+      <div class="btns">
+        <a class="btn" href="https://academy.hackthebox.com/" target="_blank" rel="noopener noreferrer">Try HTB Academy →</a>
+        <a class="btn alt" href="https://discord.gg/xkkq6FsyF" target="_blank" rel="noopener noreferrer">Join us in OwlSec →</a>
+      </div>
+    </aside>
+  </div>
+  <div id="sections"></div>
+  <p class="nohit" id="nohit">No matches. Try a broader term, or clear the search.</p>
+  <section id="community" class="community">
+    <div class="sec-head"><span class="lbl">STEP 06 · GET INVOLVED</span><h2>Join FemmeTech</h2><span class="num">STEP 06</span></div>
+    <p class="sec-intro">You don't have to learn alone. FemmeTech is a community of women leveling up in tech together — ask questions, find mentors, join live events and co-working sessions, and get real support breaking in. This whole library grew out of our server, and it keeps growing because members share what's working.</p>
+    <a class="join" id="join" href="https://ig.me/m/sudochef" target="_blank" rel="noopener">Find the invite — DM @sudochef →</a>
+    <a class="join alt" href="https://discord.gg/xkkq6FsyF" target="_blank" rel="noopener noreferrer">Join OwlSec →</a>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p><b>The Cyber Pantry</b> — a resource library by <b>SudoChef</b>, helping women level up in cybersecurity. Clicking a card opens the resource in a new tab. Found something dead or missing, or have one to add? <a href="https://ig.me/m/sudochef" target="_blank" rel="noopener noreferrer">DM @sudochef on Instagram</a> and it'll be reviewed before it goes in.</p>
+  <p style="margin-top:10px">&copy; 2026 SudoChef &middot; Personal use only &mdash; see the <a href="https://github.com/commit-issues/cyber-pantry/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">license</a>. Want to reuse something? <a href="https://ig.me/m/sudochef" target="_blank" rel="noopener noreferrer">Ask first</a>.</p>
+  <p style="margin-top:14px;font-family:var(--mono);font-size:12px;color:var(--muted)" id="ct-foot">free resources · vetted November 2026</p>
+</footer>
+
+<script>
+/* ---- theme toggle (per-viewer convenience) ---- */
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  var s=null; try{s=localStorage.getItem('ft-theme');}catch(e){} root.setAttribute('data-theme',s||'dark');
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme');
+    var dark=cur?cur==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('ft-theme',next);}catch(e){}
+  });
+})();
+
+/* ---- GitHub star count (fails quietly) ---- */
+(function(){
+  try{
+    fetch('https://api.github.com/repos/commit-issues/cyber-pantry').then(function(r){return r.ok?r.json():null;}).then(function(j){
+      if(j&&typeof j.stargazers_count==='number'){document.getElementById('stars').textContent='\u2b50 '+j.stargazers_count+' \u00b7 Star on GitHub';}
+    }).catch(function(){});
+  }catch(e){}
+})();
+
+/* ---- data ---- */
+var DATA=[
+ {id:"foundations",num:"01",lbl:"START HERE",title:"Foundations — Code, Linux & Networking",
+  intro:"You can't secure what you don't understand. Get comfortable with a language, the Linux command line, and how networks move data before anything else.",
+  tip:"New to all of it? Do CS50x or freeCodeCamp alongside the Linux + networking basics. One project beats ten tutorials — build something small.",
+  items:[
+   ["freeCodeCamp","https://www.freecodecamp.org/","Full free curriculum: web dev, Python, data, more.","web dev"],
+   ["Harvard CS50x","https://pll.harvard.edu/course/cs50-introduction-computer-science","The legendary intro to computer science.","cs intro"],
+   ["CS50P — Python","https://cs50.harvard.edu/python/","Harvard's intro to programming with Python.","python"],
+   ["Codecademy","https://www.codecademy.com/","Interactive lessons (free tier) across languages.","interactive"],
+   ["learnpython.org","https://www.learnpython.org/","In-browser Python from beginner to advanced.","python"],
+   ["learn-c.org","https://www.learn-c.org/","Same format, for C.","c lang"],
+   ["Automate the Boring Stuff","https://automatetheboringstuff.com/","Practical Python for real-world automation (3rd ed).","python"],
+   ["MDN Web Docs","https://developer.mozilla.org/","The reference for HTML, CSS & JavaScript.","web ref"],
+   ["W3Schools","https://www.w3schools.com/","Quick tutorials & references for web languages.","web ref"],
+   ["JavaScript Tutorial","https://www.javascripttutorial.net/javascript-dom/","Clear JS + DOM walkthroughs.","javascript"],
+   ["Codédex","https://www.codedex.io/","Game-like way to learn to code.","interactive"],
+   ["CodinGame","https://www.codingame.com/start/","Learn by solving coding puzzles.","practice"],
+   ["GoalKicker Books","https://books.goalkicker.com/","Free programming notes-for-pros PDFs.","books"],
+   ["Free Programming Books","https://ebookfoundation.github.io/free-programming-books/","Huge index of free dev books & courses.","books"],
+   ["Advanced Bash Scripting","https://tldp.org/LDP/abs/html/","The deep reference for Bash scripting.","bash"],
+   ["Linux Journey","https://linuxjourney.com/","Friendly, structured intro to Linux.","linux"],
+   ["GfG Linux Cheat Sheet","https://www.geeksforgeeks.org/linux-commands-cheat-sheet/","Beginner→advanced Linux command reference.","linux"],
+   ["DigitalOcean: grep","https://www.digitalocean.com/community/tutorials/grep-command-in-linux-unix","One of many great free Linux/sysadmin tutorials.","linux"],
+   ["nand2tetris","https://www.nand2tetris.org/","Build a computer from NAND gates up.","cs deep"],
+   ["MIT OpenCourseWare","https://ocw.mit.edu/","Free MIT course materials, all subjects.","courses"],
+   ["Ximera (OSU)","https://ximera.osu.edu/","Free interactive math foundations.","math"],
+   ["Helsinki Python MOOC","https://programming-25.mooc.fi/","Uni-grade free Python course.","python"],
+   ["What is Git made of?","https://zserge.com/posts/git/","Understand Git by building a tiny one.","git"],
+   ["GitGud","https://gitmastery.me/","Learn Git through interactive challenges.","git"],
+   ["Computer Networks: A Systems Approach","https://book.systemsapproach.org/","Free, full networking textbook.","networking"],
+   ["Network Security: A Systems Approach","https://security.systemsapproach.org/","Free companion book on network security.","networking"],
+   ["HelloSilicon","https://github.com/below/HelloSilicon","Intro to ARM64 assembly.","asm"],
+   ["SQLBolt","https://sqlbolt.com/","Learn SQL with interactive exercises.","sql"],
+   ["LeetCode","https://leetcode.com/","Coding-interview & algorithm practice.","practice"],
+   ["HackerRank","https://www.hackerrank.com/","Skills practice & challenges.","practice"],
+   ["CodeChef","https://www.codechef.com/","Competitive programming practice.","practice"],
+   ["Linux Upskill Challenge","https://linuxupskillchallenge.org/","Free month-long hands-on Linux sysadmin course.","linux"],
+   ["Cisco Networking Basics","https://www.netacad.com/courses/networking/networking-basics","Free beginner networking course from Cisco.","networking"],
+   ["Practical Networking","https://www.practicalnetworking.net/","Clear, free networking tutorials from the ground up.","networking"],
+   ["Ben Eater","https://eater.net/","Build networks & computers from scratch (video).","networking"],
+   ["Simplilearn SkillUp","https://www.simplilearn.com/skillup-free-online-courses","Free courses in networking, cyber, cloud & more.","courses"],
+   ["ExplainShell","https://explainshell.com/","Breaks down any shell command, flag by flag.","linux"],
+   ["tldr pages","https://tldr.sh/","Community-made simplified man pages.","linux"],
+   ["Cisco Packet Tracer","https://www.netacad.com/courses/packet-tracer","Free network simulator to build & test topologies.","networking"],
+   ["GNS3","https://www.gns3.com/","Free network emulation for realistic labs.","networking"]
+  ]},
+
+ {id:"roadmaps",num:"02",lbl:"ORIENT",title:"Roadmaps & Study Plans",
+  intro:"Cybersecurity is huge. These maps show the terrain so you can pick a direction instead of wandering.",
+  tip:"Don't try to learn everything. Skim one roadmap, choose ONE track that excites you, and go deep. You can branch later.",
+  items:[
+   ["roadmap.sh — Cybersecurity","https://roadmap.sh/cyber-security","The visual step-by-step cyber roadmap.","roadmap"],
+   ["Paul Jerimy Cert Roadmap","https://pauljerimy.com/security-certification-roadmap/","Every security cert, mapped by domain & level.","certs"],
+   ["dragkob Cert Roadmap","https://dragkob.com/security-certification-roadmap","Alternative, regularly updated cert map.","certs"],
+   ["Book of Secret Knowledge","https://github.com/trimstray/the-book-of-secret-knowledge","Massive list of tools, cheatsheets & manuals.","mega list"],
+   ["Hacker Roadmap","https://github.com/Hacking-Notes/Hacker-Roadmap","Detailed plan toward pentesting proficiency.","roadmap"],
+   ["TryHackMe Roadmap","https://github.com/uttambodara/TryHackMeRoadmap","An ordered path through THM rooms.","roadmap"],
+   ["90 Days of CyberSecurity","https://github.com/farhanashrafdev/90DaysOfCyberSecurity","A 90-day daily study plan.","study plan"],
+   ["Tools of the Trade","https://github.com/cjbarber/ToolsOfTheTrade","Curated SaaS & tools for builders.","mega list"],
+   ["DFIRmadness 5 Pillars","https://github.com/DFIRmadness/5pillars","How to become a security pro, with free resources.","guide"],
+   ["AppSecExplained","https://appsecexplained.gitbook.io/appsecexplained","Start-here wiki for application security.","appsec"],
+   ["Beginner Bug Bounty","https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters","Nahamsec's starter pack for bug bounty.","bug bounty"],
+   ["OSSU Computer Science","https://github.com/ossu/computer-science","A free self-taught CS degree path.","cs"],
+   ["learn-anything.xyz","https://learn-anything.xyz/","Community learning maps for any topic.","meta"],
+   ["awesome-pentest","https://github.com/enaqx/awesome-pentest","Curated master list of pentest resources.","mega list"],
+   ["awesome-osint","https://github.com/jivoi/awesome-osint","Curated master list of OSINT resources.","mega list"],
+   ["awesome-incident-response","https://github.com/meirwah/awesome-incident-response","Curated DFIR & IR tools and resources.","mega list"],
+   ["awesome-ctf","https://github.com/apsdehal/awesome-ctf","Curated CTF frameworks, tools & wargames.","mega list"],
+   ["CISA Cyber Career Pathways","https://niccs.cisa.gov/tools/cyber-career-pathways-tool","Map security roles, skills & how they connect.","careers"]
+  ]},
+
+ {id:"labs",num:"03",lbl:"PRACTICE",title:"Hands-On Platforms & Labs",
+  intro:"Reading isn't hacking. These give you safe, legal targets to actually break things on.",
+  tip:"Only ever test on these platforms or your own lab. Unauthorized access to systems you don't own is a crime, full stop.",
+  items:[
+   ["Hack The Box","https://www.hackthebox.com/","Machines & challenges, easy to elite.","labs"],
+   ["HTB Academy","https://academy.hackthebox.com/","Guided security modules (free tier).","course"],
+   ["HTB: Learn to Hack Bible","https://www.hackthebox.com/blog/learn-to-hack-beginners-bible","Step-by-step beginner guide from HTB.","guide"],
+   ["TryHackMe","https://tryhackme.com/","Guided, beginner-friendly hands-on rooms.","labs"],
+   ["TryHackMe — Free Path","https://tryhackme.com/hacktivities","Filter to the free learning content.","labs"],
+   ["pwn.college","https://pwn.college/","Free university-style offensive security course.","course"],
+   ["OverTheWire","https://overthewire.org/wargames/","Classic Linux/security wargames (start: Bandit).","wargames"],
+   ["PortSwigger Web Academy","https://portswigger.net/web-security","The gold standard for learning web hacking — free.","web"],
+   ["Hacksplaining","https://www.hacksplaining.com/lessons","Interactive lessons on common vulns.","web"],
+   ["picoCTF","https://picoctf.org/","Beginner CTF challenges & practice gym.","ctf"],
+   ["Root Me","https://www.root-me.org/","Hundreds of hacking challenges.","challenges"],
+   ["HackThisSite","https://www.hackthissite.org/","Long-running free hacking challenge site.","challenges"],
+   ["SmashTheStack","https://www.smashthestack.org/","Wargames focused on exploitation.","wargames"],
+   ["exploit.education","https://exploit.education/","VMs & challenges for exploit basics.","exploitation"],
+   ["PentesterLab","https://pentesterlab.com/","Hands-on web security exercises (free set).","web"],
+   ["RangeForce Community","https://www.rangeforce.com/","Free hands-on blue/red skill labs.","labs"],
+   ["HackXpert Labs","https://labs.hackxpert.com/","Free web security training labs.","web"],
+   ["Backdoors & Breaches","https://play.backdoorsandbreaches.com/","Incident-response card game, online & free.","blue team"],
+   ["VulNyx","https://vulnyx.com/","Vulnerable machines to practice on.","labs"],
+   ["pwnable.kr","https://pwnable.kr/","Fun binary-exploitation challenges.","pwn"],
+   ["ginandjuice.shop","https://ginandjuice.shop/","A deliberately vulnerable practice shop.","web"],
+   ["SANS Holiday Hack","https://www.sans.org/cyber-ranges/holiday-hack-challenge","Free, high-quality annual challenge.","ctf"],
+   ["capsulecorp-pentest","https://github.com/r3dy/capsulecorp-pentest","Build a free internal pentest lab.","lab build"],
+   ["CTFtime","https://ctftime.org/","Find upcoming CTF competitions.","ctf"],
+   ["WeChall","https://www.wechall.net/active_sites","Directory of active challenge sites.","directory"],
+   ["OWASP Juice Shop","https://owasp.org/www-project-juice-shop/","The most modern vulnerable web app to hack.","web"],
+   ["OWASP WebGoat","https://owasp.org/www-project-webgoat/","Deliberately insecure app to learn AppSec.","web"],
+   ["DVWA","https://github.com/digininja/DVWA","Damn Vulnerable Web Application.","web"],
+   ["VulnHub","https://www.vulnhub.com/","Downloadable vulnerable VMs to hack offline.","labs"],
+   ["Metasploitable","https://docs.rapid7.com/metasploit/metasploitable-2/","The classic intentionally-vulnerable VM.","labs"],
+   ["Hacker101","https://www.hacker101.com/","HackerOne's free bug bounty course + CTF.","course"],
+   ["Metasploit Unleashed","https://www.offsec.com/metasploit-unleashed/","OffSec's free Metasploit course.","course"],
+   ["CTF101","https://ctf101.org/","Learn the categories of CTF challenges.","guide"],
+   ["Bugcrowd University","https://www.bugcrowd.com/resources/levelup/bugcrowd-university/","Free bug bounty training.","course"],
+   ["OffSec Proving Grounds Play","https://www.offsec.com/labs/play/","Free in-browser pentest labs — 50+ machines, 3 hrs/day.","labs"],
+   ["HackMyVM","https://hackmyvm.eu/","Free community vulnerable VMs to download & root.","labs"]
+  ]},
+
+ {id:"tools-core",num:"",lbl:"ESSENTIAL",title:"Essential Tools",
+  intro:"The tools working security people reach for every day — free, famous, and worth knowing by name.",
+  tip:"Install these as you need them, not all at once. Kali Linux already bundles most of the offensive ones.",
+  items:[
+   ["Kali Linux","https://www.kali.org/","The go-to pentesting Linux distro, with docs & training.","distro"],
+   ["Wireshark","https://www.wireshark.org/","The standard network protocol analyzer.","network"],
+   ["Nmap","https://nmap.org/","The network scanner — plus its free online book.","network"],
+   ["Burp Suite Community","https://portswigger.net/burp/communitydownload","Free edition of the web-pentest proxy.","web"],
+   ["CyberChef","https://gchq.github.io/CyberChef/","GCHQ's 'cyber swiss army knife' for data.","utility"],
+   ["VirusTotal","https://www.virustotal.com/","Scan files & URLs against 70+ engines.","analysis"],
+   ["Have I Been Pwned","https://haveibeenpwned.com/","Check if your accounts are in a breach.","osint"],
+   ["Exploit-DB","https://www.exploit-db.com/","The archive of public exploits (OffSec).","exploits"],
+   ["CrackStation","https://crackstation.net/","Free hash lookup & cracking.","cracking"],
+   ["regex101","https://regex101.com/","Build & test regex with live explanation.","utility"]
+  ]},
+
+ {id:"web",num:"04",lbl:"TRACK · OFFENSIVE",title:"Web Security & Bug Bounty",
+  intro:"Finding and reporting vulnerabilities in web apps — the most common on-ramp into offensive security and real bounty income.",
+  tip:"The path most people take: PortSwigger Academy → practice on labs → read disclosed HackerOne reports → start on real programs. Always stay in scope.",
+  items:[
+   ["Caido","https://caido.io/","Modern web proxy — free Burp Suite alternative.","proxy"],
+   ["OWASP Top 10","https://owasp.org/www-project-top-ten/","The canonical list of web risks (2025).","reference"],
+   ["OWASP WSTG","https://owasp.org/www-project-web-security-testing-guide/","The web security testing methodology.","methodology"],
+   ["OWASP Cheat Sheets","https://cheatsheetseries.owasp.org/","Concise defense & testing cheat sheets.","reference"],
+   ["OWASP Free Tools","https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools","Index of free/open AppSec tools.","tools"],
+   ["Intigriti Hackademy","https://www.intigriti.com/researchers/hackademy","Free bug bounty learning hub.","course"],
+   ["jwt.io","https://jwt.io/","Decode, verify & learn JSON Web Tokens.","tool"],
+   ["XSS Hunter","https://xsshunter.trufflesecurity.com/","Catch blind XSS (by Truffle Security).","tool"],
+   ["Dalfox","https://github.com/hahwul/dalfox","Fast open-source XSS scanner.","scanner"],
+   ["HackerOne Reports","https://github.com/reddelexc/hackerone-reports","Top disclosed reports to learn from.","learn"],
+   ["HackerOne","https://www.hackerone.com/","Major bug bounty platform.","platform"],
+   ["Bugcrowd","https://www.bugcrowd.com/","Major bug bounty platform.","platform"],
+   ["Pentest Report Templates","https://pentestreports.com/templates","Free report templates in every format.","reporting"],
+   ["Assetnote Wordlists","https://wordlists.assetnote.io/","Up-to-date wordlists for content discovery.","wordlists"],
+   ["SecLists","https://github.com/danielmiessler/SecLists","The security tester's companion wordlists.","wordlists"],
+   ["katana","https://github.com/projectdiscovery/katana","Next-gen crawling & spidering.","recon"],
+   ["Sploitus","https://sploitus.com/","Search engine for exploits & PoCs.","search"],
+   ["APIsec University","https://www.apisecuniversity.com/","Free API security training & certs.","course"],
+   ["Wallarm API Cert","https://wallarm.thinkific.com/","Free API Security Certified Associate.","cert"],
+   ["awesome-web-security","https://github.com/qazbnm456/awesome-web-security","Curated web security resource list.","mega list"],
+   ["Bug Bounty Dork Engine","https://nitinyadav00.github.io/Bug-Bounty-Search-Engine/","Google dorks tuned for bug bounty.","recon"]
+  ]},
+
+ {id:"redteam",num:"",lbl:"TRACK · OFFENSIVE",title:"Pentest & Red Team",
+  intro:"Network, Active Directory and infrastructure attack skills — the OSCP/CPTS world. Standard industry tooling; use only on systems you're authorized to test.",
+  tip:"Heads up: much of this is powerful offensive tooling. It's here because it's industry-standard and you'll meet it in every pentest course — but run it only in your lab or authorized engagements.",
+  items:[
+   ["HackTricks","https://hacktricks.wiki/","The red-teamer's encyclopedia of techniques.","mega wiki"],
+   ["HackTricks AI","https://ai.hacktricks.wiki/","Chat with HackTricks & prep for certs.","ai"],
+   ["PayloadsAllTheThings","https://github.com/swisskyrepo/PayloadsAllTheThings","Payloads & bypasses for every vuln class.","payloads"],
+   ["InternalAllTheThings","https://swisskyrepo.github.io/InternalAllTheThings/","AD & internal pentest cheat sheets.","cheatsheet"],
+   ["GTFOBins","https://gtfobins.github.io/","Unix binaries for bypassing local restrictions.","reference"],
+   ["WADComs","https://wadcoms.github.io/","Interactive Windows/AD offensive cheat sheet.","reference"],
+   ["revshells.com","https://www.revshells.com/","Reverse-shell generator with encoders.","tool"],
+   ["Red-Teaming-Toolkit","https://0x1.gitlab.io/pentesting/Red-Teaming-Toolkit/","Curated red-team tools by phase.","mega list"],
+   ["Awesome Red Teaming","https://github.com/yeyintminthuhtut/Awesome-Red-Teaming","Big curated red-team resource list.","mega list"],
+   ["PEASS-ng","https://github.com/peass-ng/PEASS-ng","WinPEAS/LinPEAS privilege-escalation scanners.","privesc"],
+   ["WES-NG","https://github.com/bitsadmin/wesng","Windows Exploit Suggester, next gen.","privesc"],
+   ["Seatbelt","https://github.com/GhostPack/Seatbelt","Host survey for privesc opportunities.","privesc"],
+   ["Impacket","https://github.com/fortra/impacket","Python classes for network protocols.","toolkit"],
+   ["Responder","https://github.com/lgandx/Responder","LLMNR/NBT-NS poisoning & relay.","network"],
+   ["BloodHound","https://github.com/SpecterOps/BloodHound","Map Active Directory attack paths.","active dir"],
+   ["NetExec","https://github.com/Pennyw0rth/NetExec","Network execution (the CME successor).","network"],
+   ["evil-winrm","https://github.com/Hackplayers/evil-winrm","The WinRM shell for pentesting.","shell"],
+   ["Mimikatz","https://github.com/gentilkiwi/mimikatz","Credential extraction on Windows.","creds"],
+   ["mimikatz missing manual","https://github.com/darkoperator/mimikatz-missing-manual","The reference guide for Mimikatz.","reference"],
+   ["Hashcat","https://hashcat.net/hashcat/","The fastest password recovery tool.","cracking"],
+   ["Scapy","https://github.com/secdev/scapy","Packet crafting & manipulation in Python.","network"],
+   ["BBOT","https://github.com/blacklanternsecurity/bbot","OSINT & attack-surface automation.","recon"],
+   ["OWASP Nettacker","https://github.com/OWASP/Nettacker","Automated recon & vuln scanning.","scanner"],
+   ["FLARE-VM","https://github.com/mandiant/flare-vm","Windows malware-analysis VM setup.","vm"],
+   ["Commando VM","https://github.com/mandiant/commando-vm","Windows offensive VM setup.","vm"],
+   ["Sliver","https://github.com/BishopFox/sliver","Open-source adversary emulation / C2.","c2"],
+   ["ScareCrow","https://github.com/optiv/ScareCrow","EDR-evasion payload framework.","evasion"],
+   ["HexStrike","https://github.com/0x4m4/hexstrike-ai","AI-driven offensive automation framework.","ai"],
+   ["DumpGuard","https://github.com/bytewreck/DumpGuard","Credential-dumping protection research.","research"],
+   ["ghost_eye","https://github.com/BullsEye0/ghost_eye","Information-gathering & recon tool.","recon"],
+   ["Fuzzy Security Privesc","https://www.fuzzysecurity.com/tutorials/16.html","Classic Windows privilege-escalation guide.","privesc"],
+   ["absolomb Win Privesc","https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/","Windows privesc walkthrough.","privesc"],
+   ["sushant747 OSCP Guide","https://sushant747.gitbooks.io/total-oscp-guide/content/","Total OSCP study guide.","oscp"],
+   ["vaadata Linux Privesc","https://www.vaadata.com/blog/linux-privilege-escalation-techniques-and-security-tips/","Linux privesc techniques & defenses.","privesc"],
+   ["TCM: Reverse Shell Fails","https://tcm-sec.com/things-to-try-when-your-reverse-shell-fails/","Troubleshooting reverse shells.","guide"],
+   ["LOLBAS","https://lolbas-project.github.io/","Living-off-the-land Windows binaries.","reference"],
+   ["pwntools","https://github.com/Gallopsled/pwntools","CTF exploitation framework for Python.","exploitation"],
+   ["PentestMonkey","https://pentestmonkey.net/","The classic reverse-shell cheat sheets.","cheatsheet"],
+   ["HighOn.Coffee","https://highon.coffee/blog/","Well-loved penetration-testing cheat sheets.","cheatsheet"],
+   ["ired.team","https://www.ired.team/","Offensive security & red-team technique notes.","mega wiki"]
+  ]},
+
+ {id:"blue",num:"",lbl:"TRACK · DEFENSIVE",title:"Blue Team · SOC · DFIR · Threat Intel",
+  intro:"Detecting, investigating and defending — the biggest hiring area in security. SOC analysis, incident response, forensics and threat intel.",
+  tip:"Blue team is where the most entry-level jobs are. Learn a SIEM (Splunk or Wazuh), ATT&CK, and basic log analysis and you're employable.",
+  items:[
+   ["MITRE ATT&CK","https://attack.mitre.org/","The framework of real-world attacker behavior.","framework"],
+   ["MITRE CWE","https://cwe.mitre.org/","Catalog of software weakness types.","reference"],
+   ["NIST","https://www.nist.gov/cyberframework","Cybersecurity Framework & standards.","standards"],
+   ["NIST CFReDS","https://cfreds.nist.gov/","Free forensic datasets to practice on.","forensics"],
+   ["Splunk (Free)","https://www.splunk.com/en_us/download/splunk-enterprise.html","Industry SIEM — free tier up to 500MB/day.","siem"],
+   ["Wazuh","https://wazuh.com/","Free, open-source SIEM/XDR.","siem"],
+   ["Snort","https://www.snort.org/","Open-source network intrusion detection.","ids"],
+   ["Elastic Security Labs","https://www.elastic.co/security-labs","Detection engineering & threat research.","research"],
+   ["ANY.RUN TI Lookup","https://intelligence.any.run/","Threat-intel lookups (free tier).","threat intel"],
+   ["Check Point Threat Map","https://threatmap.checkpoint.com/","Live global attack map.","viz"],
+   ["SOCRadar CTI Kit","https://start.me/p/gGj8gn/mastering-threat-intelligence-platforms","Curated threat-intel tools & methods.","threat intel"],
+   ["Threat Modeling Connect","https://www.threatmodelingconnect.com/","Community threat-model library.","threat model"],
+   ["Google SOC Paths","https://www.cloudskillsboost.google/","Free SOC-focused learning paths.","course"],
+   ["Centri (formerly Security Blue Team)","https://www.centri.org/","Free blue-team intro courses.","course"],
+   ["Microsoft Security-101","https://microsoft.github.io/Security-101/","Free security fundamentals curriculum.","course"],
+   ["ssh-audit","https://github.com/jtesta/ssh-audit","Audit your own SSH servers & clients.","hardening"],
+   ["hagezi DNS Blocklists","https://github.com/hagezi/dns-blocklists","Strong DNS blocklists (great with Pi-hole).","hardening"],
+   ["Sublime Analyzer","https://analyzer.sublime.security/","Free email / phishing analysis.","email"],
+   ["urlscan.io","https://urlscan.io/","Scan & inspect suspicious URLs.","analysis"],
+   ["Atomic Red Team","https://github.com/redcanaryco/atomic-red-team","Test detections against ATT&CK techniques.","detection"],
+   ["Free Cyber APIs","https://upskilld.com/article/free-cybersecurity-apis/","Index of free security/threat APIs.","apis"],
+   ["CyberDefenders","https://cyberdefenders.org/","Free blue-team & DFIR CTF-style challenges.","challenges"],
+   ["LetsDefend","https://letsdefend.io/","Hands-on SOC analyst training (free tier).","soc"],
+   ["Blue Team Labs Online","https://blueteamlabs.online/","Free investigation & DFIR challenges.","challenges"],
+   ["Malware-Traffic-Analysis","https://www.malware-traffic-analysis.net/","Free packet-capture & traffic-analysis exercises.","forensics"],
+   ["The DFIR Report","https://thedfirreport.com/","Real intrusions documented start to finish.","threat intel"],
+   ["SigmaHQ","https://github.com/SigmaHQ/sigma","Shareable detection-rule format & ruleset.","detection"],
+   ["Volatility","https://www.volatilityfoundation.org/","The standard memory-forensics framework.","forensics"],
+   ["Autopsy","https://www.autopsy.com/","Free digital-forensics platform.","forensics"],
+   ["Security Onion","https://securityonionsolutions.com/","Free Linux distro for hunting & monitoring.","nsm"],
+   ["MISP","https://www.misp-project.org/","Open-source threat-intel sharing platform.","threat intel"],
+   ["abuse.ch","https://abuse.ch/","Free malware & threat-intel feeds (MalwareBazaar, URLhaus).","feeds"],
+   ["CISA KEV","https://www.cisa.gov/known-exploited-vulnerabilities-catalog","Known Exploited Vulnerabilities catalog.","reference"],
+   ["Velociraptor","https://docs.velociraptor.app/","Endpoint visibility & DFIR hunting.","dfir"]
+  ]},
+
+ {id:"cloud",num:"",lbl:"TRACK · CLOUD",title:"Cloud Security",
+  intro:"Securing AWS, Azure and GCP is one of the fastest-growing, best-paid areas in security. Learn cloud fundamentals first, then break these deliberately-vulnerable environments.",
+  tip:"Always use a free-tier or throwaway cloud account for labs, set a billing alarm, and tear everything down when you're done — a resource left running can cost money or get abused.",
+  items:[
+   ["flaws.cloud","http://flaws.cloud/","Hands-on AWS security challenge (then try flaws2.cloud).","lab"],
+   ["CloudGoat","https://github.com/RhinoSecurityLabs/cloudgoat","Vulnerable-by-design AWS environment to attack.","lab"],
+   ["AWSGoat","https://github.com/ine-labs/AWSGoat","Damn-vulnerable AWS infrastructure to practice on.","lab"],
+   ["Kubernetes Goat","https://madhuakula.com/kubernetes-goat/","Vulnerable K8s cluster for container security.","lab"],
+   ["PwnedLabs","https://pwnedlabs.io/","Free hands-on cloud security labs.","labs"],
+   ["AWS Skill Builder","https://skillbuilder.aws/","Free official AWS training, including security.","course"],
+   ["Microsoft Learn","https://learn.microsoft.com/en-us/training/","Free Azure & security learning paths.","course"],
+   ["Cloud Security Alliance","https://cloudsecurityalliance.org/education/","Free cloud security guidance & training.","reference"],
+   ["HackTricks Cloud","https://cloud.hacktricks.wiki/","The cloud-pentest encyclopedia (AWS/Azure/GCP/K8s).","mega wiki"]
+  ]},
+
+ {id:"osint",num:"",lbl:"TRACK · INVESTIGATION",title:"OSINT",
+  intro:"Open-source intelligence — finding information from public sources. Used in recon, investigations, journalism and fraud work.",
+  tip:"OSINT has real ethics. Collect from public sources, respect privacy law, and never use these to harass or dox — that's a red line.",
+  items:[
+   ["OSINT Framework","https://osintframework.com/","The classic categorized OSINT tool tree.","directory"],
+   ["Nixintel Resource List","https://start.me/p/rx6Qj8/nixintel-s-osint-resource-list","Big curated OSINT start page.","directory"],
+   ["Ultimate OSINT Collection","https://start.me/p/DPYPMz/the-ultimate-osint-collection","Massive categorized OSINT index.","directory"],
+   ["OSINT Techniques Tools","https://www.osinttechniques.com/osint-tools.html","Curated, maintained OSINT toolset.","directory"],
+   ["The OSINT Rack","https://www.mariosantella.com/the-osint-rack/","Continuously-updated OSINT collection.","directory"],
+   ["The OSINT Toolbox","https://github.com/The-Osint-Toolbox","35+ repos of OSINT resources.","directory"],
+   ["Aware Online Tools","https://www.aware-online.com/en/osint-tools/","OSINT tools tagged free vs paid.","directory"],
+   ["Shodan","https://www.shodan.io/","Search engine for internet-connected devices.","search"],
+   ["FOFA","https://en.fofa.info/","Cyberspace mapping search engine.","search"],
+   ["Intelligence X","https://intelx.io/","Search Tor, data leaks & the public web.","search"],
+   ["crt.sh","https://crt.sh/","Certificate-transparency / subdomain search.","recon"],
+   ["Subdomain Finder","https://subdomainfinder.c99.nl/","Web-based subdomain enumeration.","recon"],
+   ["Wayback Machine","https://web.archive.org/","Inspect historical versions of sites.","archive"],
+   ["GHunt","https://github.com/mxrch/GHunt","Investigate Google accounts from an email.","people"],
+   ["Osintgram","https://github.com/Datalux/Osintgram","Instagram OSINT (may be rate-limited).","social"],
+   ["Google Dork Cheatsheet","https://gist.github.com/sundowndev/283efaddbcf896ab405488330d1bbc06","Advanced search-operator reference.","dorks"],
+   ["OSINT At Home","https://www.youtube.com/playlist?list=PLrFPX1Vfqk3ehZKSFeb9pVIHqxqrNW8Sy","Video series on geolocation OSINT.","video"],
+   ["Sherlock","https://github.com/sherlock-project/sherlock","Hunt a username across 400+ social networks.","people"]
+  ]},
+
+ {id:"crypto",num:"",lbl:"TRACK · SPECIALTY",title:"Cryptography",
+  intro:"The math that secures everything. Start light, then earn it by breaking toy crypto in the challenges.",
+  items:[
+   ["Crypto101","https://www.crypto101.io/","Free, friendly intro-to-cryptography book.","book"],
+   ["Cryptopals","https://cryptopals.com/","The famous hands-on crypto challenges.","challenges"],
+   ["CryptoHack","https://cryptohack.org/","Learn crypto by solving fun puzzles.","challenges"],
+   ["Dan Boneh: Cryptography I","https://www.coursera.org/learn/crypto","The classic university crypto course (audit free).","course"],
+   ["connor-mccartney crypto","https://connor-mccartney.github.io/cryptography/","CTF cryptography write-ups.","writeups"],
+   ["Boneh–Shoup (free book)","https://toc.cryptobook.us/","A Graduate Course in Applied Cryptography.","book"]
+  ]},
+
+ {id:"malware",num:"",lbl:"TRACK · ADVANCED",title:"Malware Analysis & Reverse Engineering",
+  intro:"Taking software and malware apart to understand how it works. This is deep-end material — build the foundations first, and only handle live samples in an isolated VM.",
+  tip:"Live malware is dangerous. Analyze samples only in an isolated, snapshotted VM with no network access to anything you care about.",
+  items:[
+   ["Malware Unicorn RE101","https://malwareunicorn.org/workshops/re101.html","The beloved reverse-engineering workshop.","course"],
+   ["class.malware.re","https://class.malware.re/","Intro to malware analysis & RE course.","course"],
+   ["OpenSecurityTraining2","https://p.ost2.fyi/","Free deep courses: x86 asm, RE, more.","course"],
+   ["Nightmare (guyinatuxedo)","https://guyinatuxedo.github.io/","Free binary-exploitation / RE course.","course"],
+   ["awesome-reversing","https://github.com/tylerha97/awesome-reversing","Curated RE resources.","mega list"],
+   ["wtsxDev reverse-engineering","https://github.com/wtsxDev/reverse-engineering","Another big RE resource list.","mega list"],
+   ["RE-MA-Roadmap","https://github.com/x86byte/RE-MA-Roadmap","Reverse engineering & malware analysis path.","roadmap"],
+   ["Cutter","https://cutter.re/","Free, open-source RE platform (Rizin).","tool"],
+   ["REMnux","https://remnux.org/","The free Linux toolkit for malware analysis.","tool"],
+   ["How to Use Ghidra","https://www.varonis.com/blog/how-to-use-ghidra","Beginner guide to the NSA's RE tool.","guide"],
+   ["Detect-It-Easy","https://github.com/horsicq/Detect-It-Easy","Identify file types & packers.","tool"],
+   ["MalwareTech Challenges","https://github.com/MalwareTech/Beginner-Reversing-Challenges","Beginner reversing challenges.","practice"],
+   ["Practical Malware Analysis Labs","https://github.com/mikesiko/PracticalMalwareAnalysis-Labs","Lab files for the classic PMA book.","labs"],
+   ["SensePost x86 Crash Course","https://sensepost.com/blogstatic/2014/01/SensePost_crash_course_in_x86_assembly-.pdf","Assembly fundamentals PDF.","asm"],
+   ["Lena's Reversing for Newbies","https://forum.tuts4you.com/files/file/1307-lenas-reversing-for-newbies/","Classic beginner RE tutorial series.","course"],
+   ["vx-underground","https://vx-underground.org/","Largest collection of malware papers & samples.","archive"],
+   ["awesome-malware-development","https://github.com/rootkit-io/awesome-malware-development","Maldev learning resources.","mega list"],
+   ["maldev-for-dummies","https://github.com/chvancooten/maldev-for-dummies","Intro course to malware development.","course"],
+   ["cocomelonc blog","https://cocomelonc.github.io/","Hands-on malware-dev & RE write-ups.","blog"],
+   ["0x00sec","https://0x00sec.org/","Community for RE, maldev & low-level security.","community"],
+   ["Paged Out!","https://pagedout.institute/","Free one-page technical security zine.","zine"],
+   ["tmp.0ut","https://tmpout.sh/","Zine on ELF, RE & low-level hacking.","zine"],
+   ["Cosmodium CyberSecurity","https://www.youtube.com/@CosmodiumCS","Malware-engineering video courses.","video"],
+   ["crackmes.one","https://crackmes.one/","Free crackmes to practice reverse engineering.","practice"],
+   ["begin.re","https://www.begin.re/","Free beginner reverse-engineering course.","course"],
+   ["RE for Beginners (book)","https://beginners.re/","Free 1000+ page RE book by Yurichev.","book"],
+   ["OALabs","https://www.youtube.com/@OALABS","Practical malware-RE videos & streams.","video"],
+   ["MalDev Academy","https://maldevacademy.com/","In-depth, structured malware development course.","course","paid"],
+   ["Zero2Automated","https://courses.zero2auto.com/","Advanced malware analysis & unpacking course.","course","paid"],
+   ["Ghidra","https://ghidra-sre.org/","The NSA's free reverse-engineering suite.","tool"],
+   ["x64dbg","https://x64dbg.com/","Open-source Windows debugger.","tool"],
+   ["Rizin / radare2","https://rizin.re/","Open-source RE framework (powers Cutter).","tool"],
+   ["pwndbg","https://github.com/pwndbg/pwndbg","GDB plug-in for exploit development.","tool"]
+  ]},
+
+ {id:"certs",num:"05",lbl:"PROVE IT",title:"Certifications & Exam Prep",
+  intro:"Certs open HR doors, especially for your first role. Here's how to prep without paying for a bootcamp.",
+  tip:"For breaking in: CompTIA Security+ or the free Google Cybersecurity Cert get past most HR filters. Don't over-invest in certs before you have hands-on skills.<br><b>Win a free voucher</b> by joining <a href=\"https://discord.gg/xkkq6FsyF\" target=\"_blank\" rel=\"noopener noreferrer\">OwlSec</a> and <a href=\"https://ig.me/m/sudochef\" target=\"_blank\" rel=\"noopener noreferrer\">FemmeTech</a> (for women) and make sure to be following <a href=\"https://www.instagram.com/sudochef/\" target=\"_blank\" rel=\"noopener noreferrer\">SudoChef</a> on all platforms to win!",
+  items:[
+   ["HTB · Start Here","https://academy.hackthebox.com/preview/certifications","CJCA — beginner cert, offense + defense. Every HTB cert has its own Academy path that teaches the whole exam.","htb","freepaid"],
+   ["HTB · Pentesting & Red Team","https://academy.hackthebox.com/preview/certifications","CPTS · CWES · CWEE · CAPE (Active Directory) · CWPE (Wi-Fi) · COAE (AI red team).","htb","freepaid"],
+   ["HTB · Blue Team","https://academy.hackthebox.com/preview/certifications","CDSA (SOC) · CDEP (detection engineering).","htb","freepaid"],
+   ["ExamCompass","https://www.examcompass.com/","Free CompTIA practice tests (A+, Net+, Sec+).","practice"],
+   ["HTB CDSA Prep Track","https://app.hackthebox.com/tracks/CDSA-Preparation","Free prep track for the blue-team cert.","blue team"],
+   ["OffSec PEN-103 (KLCP)","https://www.offsec.com/courses/pen-103/","Free official Kali Linux course.","kali"],
+   ["ISC2 CC","https://www.isc2.org/certifications/cc","Entry cert — training & exam periodically free.","entry"],
+   ["ISACA Scholarships","https://www.isaca.org/","Recurring free cert scholarships.","scholarship"],
+   ["CertPreps Security+","https://certpreps.com/exams/secplus/","Free Security+ practice questions.","practice"],
+   ["Coursera Security+ SY0-701","https://www.coursera.org/learn/comptia-security-701","Free (audit) Security+ prep by Infosec.","comptia"],
+   ["Professor Messer","https://www.professormesser.com/","Free A+/Net+/Sec+ video courses.","video"],
+   ["Google Cybersecurity Cert","https://www.coursera.org/professional-certificates/google-cybersecurity","Beginner cert — audit free / financial aid.","entry"]
+  ]},
+
+ {id:"creators",num:"",lbl:"STAY CURRENT",title:"Creators, Podcasts & News",
+  intro:"This list gets you started; these keep you going. Follow a few and security stops feeling like homework.",
+  items:[
+   ["SudoChef","https://www.instagram.com/sudochef/","Your host — Owner of SheBuilds, She256, and FemmeTech founder... Content: News Cyber, AI, STEAM & Career. \"Engineer Your Best Life\" Follow me on <a href=\"https://www.instagram.com/sudochef/\" target=\"_blank\" rel=\"noopener noreferrer\">IG</a>, and follow for more FREE resources and giveaways EXCLUSIVELY on <a href=\"https://www.facebook.com/sud0chef/\" target=\"_blank\" rel=\"noopener noreferrer\">FB</a>.","founder"],
+   ["srhoe","https://www.instagram.com/srhoe/","Owner of OwlSec and FemmeTech co-pilot — Mega Star Content Creator in cyber, compsci, & community. Follow srhoe on <a href=\"https://www.instagram.com/srhoe/\" target=\"_blank\" rel=\"noopener noreferrer\">IG</a> and <a href=\"https://www.facebook.com/@srh0e\" target=\"_blank\" rel=\"noopener noreferrer\">FB</a>.","founder"],
+   ["Cyb3rMaddy","https://www.youtube.com/@Cyb3rMaddy","(Maddy) — a cybersecurity content creator and founder of HiveMind Academy. Check her out on <a href=\"https://www.instagram.com/cyb3rmaddy/\" target=\"_blank\" rel=\"noopener noreferrer\">IG</a>.","youtube"],
+   ["IppSec","https://www.youtube.com/@ippsec","HTB machine walkthroughs — legendary.","youtube"],
+   ["John Hammond","https://www.youtube.com/@_JohnHammond","Malware, CTFs & hands-on hacking.","youtube"],
+   ["LiveOverflow","https://www.youtube.com/@LiveOverflow","How hacks actually work, deep & clear.","youtube"],
+   ["NetworkChuck","https://www.youtube.com/@NetworkChuck","Networking & IT, beginner-friendly.","youtube"],
+   ["David Bombal","https://www.youtube.com/@davidbombal","Networking, Linux & cyber careers.","youtube"],
+   ["The Cyber Mentor","https://www.youtube.com/@TCMSecurityAcademy","Practical ethical hacking.","youtube"],
+   ["InsiderPhD","https://www.youtube.com/@InsiderPhD","Approachable bug bounty tutorials.","youtube"],
+   ["Black Hills InfoSec","https://www.youtube.com/@BlackHillsInformationSecurity","Free in-depth security webcasts.","youtube"],
+   ["Darknet Diaries","https://darknetdiaries.com/","True stories from the dark side of the net.","podcast"],
+   ["Malicious Life","https://malicious.life/","The history of cybersecurity, told well.","podcast"],
+   ["Risky Business","https://risky.biz/","Weekly security news & analysis.","podcast"],
+   ["Krebs on Security","https://krebsonsecurity.com/","Deep investigative security journalism.","news"],
+   ["BleepingComputer","https://www.bleepingcomputer.com/","Daily security & breach news.","news"],
+   ["The Hacker News","https://thehackernews.com/","Fast cybersecurity news.","news"],
+   ["tl;dr sec","https://tldrsec.com/","The best weekly AppSec newsletter.","newsletter"]
+  ]},
+
+ {id:"privacy",num:"",lbl:"ALWAYS-ON",title:"Privacy, OPSEC & Safety",
+  intro:"Protecting yourself comes first. Lock down your own footprint before you poke at anyone else's.",
+  items:[
+   ["Privacy Guides","https://www.privacyguides.org/","Trusted, ad-free privacy tool recommendations.","guide"],
+   ["Proton Mail","https://proton.me/mail","Encrypted email, free tier.","email"],
+   ["Proton Pass","https://proton.me/pass","Free, open-source password manager.","passwords"],
+   ["Proton VPN","https://protonvpn.com/","Free VPN with no data cap.","vpn"],
+   ["default-password.info","https://default-password.info/","Database of device default credentials.","reference"],
+   ["TruffleHog Extension","https://chromewebstore.google.com/detail/trufflehog/ojpilaklfjcfpehafidhijapphckbbbo","Browser secret-scanning extension.","tool"],
+   ["NCMEC Take It Down","https://takeitdown.ncmec.org/","Help remove non-consensual intimate images.","safety"],
+   ["Cloudflare: Lava-Lamp Encryption","https://www.cloudflare.com/learning/ssl/lava-lamp-encryption/","How randomness & SSL actually work.","explainer"],
+   ["EFF Surveillance Self-Defense","https://ssd.eff.org/","Free guides to protect yourself from online surveillance.","guide"]
+  ]},
+
+ {id:"ai",num:"",lbl:"EMERGING",title:"AI Security",
+  intro:"Securing and attacking AI/LLM systems is the newest frontier — worth watching as it becomes its own career track.",
+  items:[
+   ["Gray Swan Arena","https://app.grayswan.ai/arena","AI red-teaming challenges with real prizes — plus a weekly Proving Ground.","ai red team","partner"],
+   ["Gandalf by Lakera","https://gandalf.lakera.ai/","Trick the AI into revealing its password — the classic prompt-injection game.","game","featured"],
+   ["HarmBench","https://www.harmbench.org/","Framework for automated LLM red teaming.","framework"],
+   ["Embrace The Red","https://embracethered.com/blog/","Leading blog on AI/prompt-injection attacks.","blog"],
+   ["joey-melo payloads","https://github.com/joey-melo/payloads","Payloads for AI red teaming & beyond.","payloads"],
+   ["free-llm-api-resources","https://github.com/cheahjs/free-llm-api-resources","Where to get free LLM API access.","apis"]
+  ]},
+
+ {id:"tools",num:"",lbl:"ALWAYS-ON",title:"Dev Tools & Utilities",
+  intro:"The everyday software that makes the rest of this easier — note-taking, diagrams, dev environments, references.",
+  items:[
+   ["secureyour.sh","https://secureyour.sh/","Developer security guide by SudoChef — build like you're the target. Because you are.","guide","sudochef"],
+   ["Obsidian","https://obsidian.md/","Free local-first notes — great for a hacking wiki.","notes"],
+   ["draw.io","https://www.drawio.com/","Free diagramming for networks & flows.","diagrams"],
+   ["Realtime Colors","https://www.realtimecolors.com/","Preview color palettes on a real layout.","design"],
+   ["21st.dev","https://21st.dev/","Community UI components for building.","ui"],
+   ["PyCharm / JetBrains","https://www.jetbrains.com/pycharm/","Free Python IDE (Community).","ide"],
+   ["MS Free Dev VMs","https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/","Free Windows VMs for your lab.","vm"],
+   ["StationX Ports Cheat Sheet","https://www.stationx.net/common-ports-cheat-sheet/","Common ports & protocols reference.","reference"],
+   ["public-apis","https://github.com/public-apis/public-apis","Huge list of free public APIs.","apis"],
+   ["free-for.dev","https://free-for.dev/","Free tiers of dev services, all in one place.","mega list"],
+   ["GitHub Student Pack","https://education.github.com/pack","Tons of free tools if you're a student.","perks"],
+   ["Animagraffs","https://animagraffs.com/","Animated infographics of how things work.","learning"],
+   ["THC Tips & Tricks","https://tips.hackerschoice.org/","Single-page Linux/SSH/CLI cheat sheet.","cheatsheet"],
+   ["Handy","https://handy.computer/","Free, local, open-source speech-to-text.","tool"],
+   ["iFixit","https://www.ifixit.com/","Free repair guides for devices.","hardware"]
+  ]},
+
+ {id:"web3",num:"",lbl:"SPECIALTY",title:"Web3 & Smart Contract Security",
+  intro:"Auditing smart contracts is a lucrative niche. Start here only after you're comfortable with programming and security basics.",
+  items:[
+   ["Alchemy University","https://www.alchemy.com/university","Free web3 / Solidity dev courses.","course"],
+   ["Secureum","https://secureum.substack.com/","Smart-contract security bootcamp material.","course"],
+   ["Ethernaut","https://ethernaut.openzeppelin.com/","CTF-style smart-contract hacking game.","ctf"],
+   ["Damn Vulnerable DeFi","https://www.damnvulnerabledefi.xyz/","DeFi exploitation wargame.","wargame"]
+  ]}
+];
+
+/* ---- render ---- */
+var host=document.getElementById('sections');
+var total=0;
+function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
+var ARROW='<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+var BULB='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6m-5 3h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg>';
+DATA.forEach(function(s){
+  var sec=el('section');sec.id=s.id;
+  var head=el('div','sec-head');
+  head.appendChild(el('span','lbl',s.lbl));
+  head.appendChild(el('h2',null,s.title));
+  if(s.num) head.appendChild(el('span','num','STEP '+s.num));
+  sec.appendChild(head);
+  if(s.intro) sec.appendChild(el('p','sec-intro',s.intro));
+  if(s.tip) sec.appendChild(el('div','tip',BULB+'<div><b>Tip —</b> '+s.tip+'</div>'));
+  var grid=el('div','grid');
+  var adv=(s.id==='malware'||s.id==='redteam');
+  s.items.forEach(function(it){
+    total++;
+    var rich=/<a\s/i.test(it[2]);
+    var a=el(rich?'div':'a','card'+(adv?' adv':'')+(rich?' rich':''));
+    if(!rich){a.href=it[1];a.target='_blank';a.rel='noopener noreferrer';}
+    a.setAttribute('data-s',(it[0]+' '+it[2].replace(/<[^>]+>/g,'')+' '+(it[3]||'')+' '+(it[4]||'')+' '+s.title).toLowerCase());
+    var badges='';
+    if(it[3]) badges+='<span class="tg">'+it[3]+'</span>';
+    if(it[4]==='paid') badges+='<span class="tg paid">paid</span>';
+    if(it[4]==='freepaid') badges+='<span class="tg">some free</span><span class="tg paid">some paid</span>';
+    if(it[4]==='partner') badges+='<span class="tg partner">partner</span>';
+    if(it[4]==='sudochef') badges+='<span class="tg partner">featured by SudoChef</span>';
+    if(it[4]==='partner'||it[4]==='featured'||it[4]==='sudochef') a.classList.add('hl');
+    var nm=rich?'<a class="main" href="'+it[1]+'" target="_blank" rel="noopener noreferrer">'+it[0]+'</a>':'<span>'+it[0]+'</span>';
+    a.innerHTML='<div class="nm">'+nm+ARROW+'</div>'+
+                '<div class="bl">'+it[2]+'</div>'+
+                (badges?'<div class="tags">'+badges+'</div>':'');
+    grid.appendChild(a);
+  });
+  sec.appendChild(grid);
+  host.appendChild(sec);
+});
+
+/* ---- search ---- */
+var q=document.getElementById('q'), shown=document.getElementById('shown'),
+    nohit=document.getElementById('nohit'), cards=[].slice.call(document.querySelectorAll('.card'));
+function run(){
+  var t=q.value.trim().toLowerCase(), n=0;
+  cards.forEach(function(c){var m=!t||c.getAttribute('data-s').indexOf(t)>-1;c.hidden=!m;if(m)n++;});
+  document.querySelectorAll('section').forEach(function(sec){
+    var any=[].slice.call(sec.querySelectorAll('.card')).some(function(c){return !c.hidden;});
+    sec.hidden=!any;
+  });
+  shown.textContent=n;
+  nohit.style.display=n?'none':'block';
+}
+q.addEventListener('input',run);
+shown.textContent=total;
+document.getElementById('ct-hero').textContent=total+'+ resources mostly free';
+document.getElementById('ct-foot').textContent=total+' free resources · vetted November 2026';
+q.placeholder='search '+total+'+ resources…';
+</script>
+
+</body></html>
